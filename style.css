@@ -1,0 +1,150 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: url("images/cursor1.png"), auto;
+}
+html {
+
+}
+:root{
+    --clr-main: #84D2C5;
+    --clr-second: #E4C988;
+    --clr-third: #C27664;
+    --clr-fourth: #B05A7A;
+}
+img {
+    height: 150px;
+    width: 100px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    height: 100vh;
+    width: 1920px;
+    background-color: var(--clr-main);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left-container {
+    background-color: var(--clr-fourth);
+}
+.right-container {
+    background-color: var(--clr-third);
+}
+/* START, Inside items */
+.inside-container {
+    background-color:var(--clr-second);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    font-family: 'Press Start 2P', cursive;
+}
+.vs-text {
+    text-align: center;
+    font-size: 7em;
+    color: black;
+}
+.chaltext {
+    position: relative;
+}
+
+
+.decide {
+    margin-top: 20em;
+    position: absolute;
+}
+.decide-button {
+    height: 100px;
+    width: 170px;
+    font-size: 1.5em;
+    font-family: 'Press Start 2P';
+}
+.reset {
+    margin-top: 30em;
+    position: absolute;
+ 
+}
+.reset-button {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+}
+
+/* END, Inside Items */
+
+/* START, Challenger Items */
+
+.challenger-1 {
+    height: 200px;
+    width: 140px;
+    border: 3px solid var(--clr-fourth);
+}
+
+.challenger-2 {
+    height: 200px;
+    width: 140px;
+    border: 3px solid var(--clr-third);
+}
+
+/* END, Challenger Items */
+
+
+
+/* START, Inventory on the sides  */
+.side-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    min-height: 400px;
+    flex-wrap: wrap;
+    gap: 2.6em;
+    font-family: 'VT323', monospace;
+    
+}
+
+.side-items > div {
+    border: 3px solid var(--clr-main);
+}
+
+.side-items > div:hover {
+    opacity: .5;
+    transition: .2s;
+    margin-top: -1px;
+    cursor: pointer;
+}
+
+.pawn {
+
+}
+.queen {
+    width: 100px;
+    height: 140px;
+}
+.king {
+    width: 100px;
+    height: 160px;
+}
+.rook{
+
+}
+.bishop{
+
+}
+.under-text {
+    text-align: center;
+    position: relative;
+    margin: 0px 0px 30px 0px;
+    background-color: bisque;
+}
+/* END, Inventory on the sides  */
+
